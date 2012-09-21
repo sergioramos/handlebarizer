@@ -1,6 +1,6 @@
 {
   "name": "handlebarizer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Solution for compiling handlebars templates into vanilla JS functions for client-side use. Inspired by templatizer",
   "main": "handlebarizer.js",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "https://github.com/ramitos/handlebarizer"
   },
   "bin": {
-    "handlebarizer": "./handlebarizer"
+    "handlebarizer": "./bin/handlebarizer"
   },
   "scripts": {
     "test": "node test/runner.js"
