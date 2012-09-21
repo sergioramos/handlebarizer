@@ -1,0 +1,25 @@
+{
+  "name": "handlebarizer",
+  "version": "0.0.1",
+  "description": "Solution for compiling handlebars templates into vanilla JS functions for client-side use. Inspired by templatizer",
+  "main": "handlebarizer.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ramitos/handlebarizer"
+  },
+  "scripts": {
+    "test": "node test/runner.js"
+  },
+  "keywords": [
+    "handlebars",
+    "templates",
+    "compiler"
+  ],
+  "author": "Sérgio Ramos",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "1.0.x",
+    "async": "0.1.x",
+    "commander": "1.0.x"
+  }
+}

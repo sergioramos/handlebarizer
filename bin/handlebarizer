@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var handlebarizer = require('../'),
+    program = require('commander'),
+    path = require('path')
+
+program.version('0.0.1')
+
+program
+  .command('compile <path>')
+  .description('compile handlebars templates in the especified path')
+  .action(function (dir, options) {
+    handlebarizer(path.resolve(dir))
+  })
+
+program.parse(process.argv)
