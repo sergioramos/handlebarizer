@@ -1,6 +1,6 @@
 {
   "name": "handlebarizer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Solution for compiling handlebars templates into vanilla JS functions for client-side use. Inspired by templatizer",
   "main": "handlebarizer.js",
   "repository": {

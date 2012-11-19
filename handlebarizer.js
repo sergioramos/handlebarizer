@@ -4,14 +4,14 @@ var interpolate = require('util').format,
     path = require('path'),
     fs = require('fs')
 
-var template = handlebars.compile(fs.readFileSync('./template.handlebars', 'utf8'))
+var template = handlebars.compile(fs.readFileSync(__dirname + '/template.handlebars', 'utf8'))
 
 module.exports = function (directory, callback) {
   directory = path.normalize(directory)
   
   function write (source, name, callback) {
     var file = path.resolve(directory, interpolate('%s.handlebars.js', name))
-    fs.writeFile(file, template({template: source, name: name}), callback)    
+    fs.writeFile(file, template({template: source, name: name}), callback)
   }
   
   function compile (file, callback) {
