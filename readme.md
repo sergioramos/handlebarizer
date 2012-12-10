@@ -8,7 +8,7 @@ Solution for compiling handlebars templates into vanilla JS functions for client
 
 ## usage
 
-The templates are compiled to used with [component(1)](http://github.com/component/component)
+The templates are compiled to be used with [component(1)](http://github.com/component/component)
 
 ### api
 
