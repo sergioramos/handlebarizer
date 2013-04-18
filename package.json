@@ -1,6 +1,6 @@
 {
   "name": "handlebarizer",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Solution for compiling handlebars templates into vanilla JS functions for client-side use. Inspired by templatizer",
   "main": "src/handlebarizer.js",
   "repository": {
@@ -9,9 +9,6 @@
   },
   "bin": {
     "handlebarizer": "./bin/handlebarizer"
-  },
-  "scripts": {
-    "test": "node test/runner.js"
   },
   "keywords": [
     "handlebars",
@@ -23,6 +20,7 @@
   "dependencies": {
     "handlebars": "1.0.x",
     "commander": "1.0.x",
+    "findit": "0.1.x",
     "async": "0.1.x"
   }
 }

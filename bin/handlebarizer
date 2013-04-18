@@ -2,15 +2,23 @@
 
 var handlebarizer = require('../'),
     program = require('commander'),
+    finder = require('findit'),
     path = require('path')
 
-program.version('0.0.1')
+program
+  .version('0.0.1')
+  .option('-r, --recursive', 'recursive folder walk')
+
 
 program
   .command('compile <path>')
   .description('compile handlebars templates in the especified path')
   .action(function (dir, options) {
-    handlebarizer(path.resolve(dir))
+    dir = path.resolve(dir)
+    handlebarizer(dir)
+    if(!options.parent.recursive) return
+    finder.find(dir).on('directory', handlebarizer)
   })
+
 
 program.parse(process.argv)
