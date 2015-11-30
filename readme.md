@@ -1,3 +1,5 @@
+![deprecated](https://img.shields.io/badge/status-deprecated-red.svg?style=plastic)
+
 # handlebarizer
 
 Solution for compiling handlebars templates into vanilla JS functions for client-side use. Inspired by [HenrikJoreteg/templatizer](https://github.com/HenrikJoreteg/templatizer)
